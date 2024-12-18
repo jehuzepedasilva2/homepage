@@ -23,7 +23,7 @@ function getCurrentLightMode() {
 }
 
 function getOtherLightMode() {
-  return document.querySelector('.mode.other');
+  return document.querySelector('.mode.hidden');
 }
 
 export {
