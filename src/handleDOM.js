@@ -5,6 +5,13 @@ import {
   getLinkedInButton,
   getAnchors, 
 } from './cachedElements.js';
+import dogs from '../imgs/doggies.jpg';
+
+function addFooterImage() {
+  const rightFooterContainer = document.querySelector('.right-footer');
+  rightFooterContainer.innerHTML = `<img src="${dogs}" alt="doggies">`;
+}
+
 
 function clickingOutOfDropDown() {
   document.addEventListener('click', (event) => {
@@ -120,6 +127,7 @@ function start() {
   handleGitButtons();
   handleInstagramButtons();
   clickingOutOfDropDown();
+  addFooterImage();
 }
 
 export {
