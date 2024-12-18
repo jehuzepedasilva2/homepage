@@ -9,15 +9,15 @@ import {
   getOtherLightMode,
 } from './cachedElements.js';
 import {
-  champagneTheme,
-  laNoireTheme,
+  myLight,
+  myDark
 } from './colorThemes.js';
 import dogs from '../imgs/doggies.jpg';
 
 function changeColors(isDark=false) {
-  let theme = champagneTheme;
+  let theme = myLight;
   if (isDark) {
-    theme = laNoireTheme;
+    theme = myDark;
   }
   const root = document.documentElement;
   Object.keys(theme).forEach((property) => {

@@ -94,13 +94,10 @@ const midnightBlueTheme = {
   '--body-bg-color': '#001f3f',
 };
 
+const myDark = midnightBlueTheme;
+const myLight = cementTheme;
+
 export {
-  originalTheme,
-  cyberpunkTheme,
-  tealDealTheme,
-  champagneTheme,
-  cementTheme,
-  hackerTheme,
-  laNoireTheme,
-  midnightBlueTheme,
+ myDark, 
+ myLight
 };
