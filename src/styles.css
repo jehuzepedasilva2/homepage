@@ -78,7 +78,18 @@ footer {
   flex: 1;
 }
 
-svg {
+.left-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-info p {
+  padding: 0.7rem;
+  padding-left: 0;
+}
+
+.icons svg {
   height: 24px;
   width: 24px;
 }
@@ -90,6 +101,18 @@ button {
   transition: transform 0.3s ease-in-out;
 }
 
+.icons-footer {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.7rem;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
 button:hover {
   transform: scale(1.1);
 }
@@ -98,5 +121,29 @@ button:active {
   opacity: 0.5;
 }
 
+.works-container {
+  display: flex;
+  gap: 1rem;
+}
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.bottom-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-icons svg {
+  height: 24px;
+  width: 24px;
+}
 
