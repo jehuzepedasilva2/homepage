@@ -2,8 +2,35 @@ import projects from './projects.js';
 import { 
   getInstagramButton, 
   getGitButton, 
-  getLinkedInButton 
+  getLinkedInButton,
+  getAnchors, 
 } from './cachedElements.js';
+
+function clickingOutOfDropDown() {
+  document.addEventListener('click', (event) => {
+    const dropDown = document.querySelector('.vis'); 
+    const isDropDown = event.target.closest('.drop-down'); 
+    const isGitButton = event.target.closest('.git-btn');
+
+    console.log(isDropDown, isGitButton);
+
+    if (dropDown !== null && !isDropDown && !isGitButton) {
+      dropDown.classList.remove('vis');
+    }
+  });
+}
+
+function handleAnchors() {
+  const anchors = getAnchors();
+  anchors.forEach(a => {
+    a.addEventListener('click', () => {
+      const dropDown = document.querySelector('.vis');
+      if (dropDown !== null) {
+        dropDown.classList.remove('vis');
+      }
+    })
+  })
+}
 
 function handleLinkedInButtons() {
   const linkedInButtons = getLinkedInButton();
@@ -18,7 +45,9 @@ function handleGitButtons() {
   const gitButtons = getGitButton();
   gitButtons.forEach(button => {
     button.addEventListener('click', () => {
-      window.open('https://github.com/jehuzepedasilva2', '_blank');
+      const pos = button.classList[0];
+      const dropDown = document.querySelector(`${pos} .drop-down`);
+      dropDown.classList.add('vis')
     })
   })
 }
@@ -87,8 +116,10 @@ function addProjects() {
 function start() {
   addProjects();
   handleLinkedInButtons();
+  handleAnchors();
   handleGitButtons();
   handleInstagramButtons();
+  clickingOutOfDropDown();
 }
 
 export {

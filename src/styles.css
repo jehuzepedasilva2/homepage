@@ -170,3 +170,54 @@ button:active {
   background-position: center;
 }
 
+button {
+  cursor: pointer;
+}
+
+.icons-header {
+  position: relative;
+}
+
+.icons-footer {
+  position: relative;
+}
+
+.drop-down {
+  display: none;
+  width: max-content;
+  position: absolute;
+  top: 90%;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.drop-down.vis {
+  display: flex;
+  flex-direction: column;
+  transform-origin: top;
+  animation: slide-down 1s;
+}
+
+.drop-down a {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.drop-down a:hover {
+  transform: scale(1.01);
+}
+
+@keyframes slide-down {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1)
+  }
+}
+

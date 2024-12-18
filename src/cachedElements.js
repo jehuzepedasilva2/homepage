@@ -10,8 +10,13 @@ function getLinkedInButton() {
   return document.querySelectorAll('.linkedin-btn');
 }
 
+function getAnchors() {
+  return document.querySelectorAll('a');
+}
+
 export {
   getGitButton, 
   getInstagramButton, 
-  getLinkedInButton
+  getLinkedInButton,
+  getAnchors,
 }
