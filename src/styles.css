@@ -140,7 +140,16 @@ button {
   gap: 0.8rem;
 }
 
-.email svg, .phone svg, .mode svg {
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.email svg, 
+.phone svg, 
+.mode svg, 
+.location svg {
   height: 24px;
   width: 24px;
 }
