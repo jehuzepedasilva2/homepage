@@ -1,15 +1,16 @@
 @font-face {
-  font-family: 'text-font';
-  src: url('../fonts/merriweather-font/merriweather-regular-webfont.woff2') format('woff2'),
-       url('../fonts/merriweather-font/merriweather-regular-webfont.woff') format('woff');
+  font-family: 'header-font';
+  src: url('../fonts/cursive2/satisfy-regular-webfont.woff2') format('woff2'),
+       url('../fonts/cursive2/satisfy-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
 }
 
 @font-face {
-  font-family: 'header-font';
-  src: url('../fonts/poppins-font/poppins-light-webfont.woff2') format('woff2'),
-       url('../fonts/poppins-font/poppins-light-webfont.woff') format('woff');
+  font-family: 'text-font';
+  src: url('../fonts/jetbrains/jetbrainsmononl-regular-webfont.woff2') format('woff2'),
+       url('../fonts/jetbrains/jetbrainsmononl-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -24,6 +25,7 @@
 
 .header {
   font-family: 'header-font';
+  font-weight: lighter;
 }
 
 body {
@@ -113,6 +115,11 @@ button {
   gap: 0.3rem;
 }
 
+.email svg {
+  height: 24px;
+  width: 24px;
+}
+
 button:hover {
   transform: scale(1.1);
 }
@@ -123,18 +130,27 @@ button:active {
 
 .works-container {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 0.5rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 5px gray;
+  width: calc((100vw - 6rem - 2 * 1.5rem) / 3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card-bottom {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .bottom-title {
@@ -143,7 +159,14 @@ button:active {
 }
 
 .card-icons svg {
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
+}
+
+.card-top {
+  height: 250px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
