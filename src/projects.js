@@ -3,6 +3,7 @@ import tictactoe from '../imgs/tic-tac-toe.png';
 import aztecKitchen from '../imgs/aztecan-kitchen.png';
 import todo from '../imgs/todo.png';
 import etchASketch from '../imgs/etch-a-skecth.png';
+import blueBg from '../imgs/cool-background.png';
 
 const projects = [
   {
@@ -39,6 +40,13 @@ const projects = [
     gitLink: 'https://github.com/jehuzepedasilva2/etch-a-sketch',
     liveLink: 'https://jehuzepedasilva2.github.io/etch-a-sketch/',
     description: 'A fun and interactive digital Etch-A-Sketch application built with HTML, CSS, and JavaScript. Users can draw on a customizable grid, adjust the grid size, and experiment with various drawing modes'
+  }, 
+  {
+    projName: "Project name", 
+    screenShotLink: blueBg, 
+    gitLink: '',
+    liveLink: '', 
+    description: 'Short description of the project. Just a couple sentences will do.'
   }
 ]
 

@@ -28,11 +28,26 @@
   font-weight: lighter;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
   padding: 3rem;
   gap: 3rem;
+  position: relative;
+}
+
+.bg-triangle::after {
+  content: "";
+  border-top: 70vh solid lightskyblue;
+  border-right: 150vw solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 header {
@@ -50,7 +65,8 @@ header {
   background-image: url("../imgs/brwn-bg.png");
   background-size: cover;
   background-position: 50% 20%;
-  box-shadow: 0 0 5px gray;
+  box-shadow: 1px 1px 10px 2px gray;
+  z-index: 0;
 }
 
 .about-me {
@@ -60,6 +76,7 @@ header {
   flex-direction: column;
   padding: 2rem;
   box-shadow: 1px 1px 5px gray;
+  background-color: white;
 }
 
 .about-me > h2, .about-me > p {
@@ -78,6 +95,14 @@ main {
 
 footer {
   flex: 1;
+  background-color: lightskyblue;
+  margin-left: -3rem;
+  margin-right: -3rem;
+  margin-bottom: -3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .left-footer {
@@ -109,13 +134,13 @@ button {
   padding-top: 0.7rem;
 }
 
-.email {
+.email, .phone {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.8rem;
 }
 
-.email svg {
+.email svg, .phone svg {
   height: 24px;
   width: 24px;
 }
