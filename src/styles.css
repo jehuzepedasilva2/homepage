@@ -1,6 +1,102 @@
+@font-face {
+  font-family: 'text-font';
+  src: url('../fonts/merriweather-font/merriweather-regular-webfont.woff2') format('woff2'),
+       url('../fonts/merriweather-font/merriweather-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'header-font';
+  src: url('../fonts/poppins-font/poppins-light-webfont.woff2') format('woff2'),
+       url('../fonts/poppins-font/poppins-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  font-family: 'text-font';
 }
+
+.header {
+  font-family: 'header-font';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+header {
+  flex: 1;
+  display: flex;
+}
+
+.pic-container {
+  flex: 1;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  background-image: url("../imgs/brwn-bg.png");
+  background-size: cover;
+  background-position: 50% 20%;
+  box-shadow: 0 0 5px gray;
+}
+
+.about-me {
+  flex: 2;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.about-me > h2, .about-me > p {
+  margin-bottom: 1rem;
+}
+
+.icons-header {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-end;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex: 1;
+}
+
+svg {
+  height: 24px;
+  width: 24px;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+
 
