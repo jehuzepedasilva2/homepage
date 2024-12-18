@@ -47,7 +47,7 @@ function handleGitButtons() {
     button.addEventListener('click', () => {
       const pos = button.classList[0];
       const dropDown = document.querySelector(`${pos} .drop-down`);
-      dropDown.classList.add('vis')
+      dropDown.classList.toggle('vis');
     })
   })
 }
