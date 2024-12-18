@@ -38,11 +38,13 @@ body {
   padding: 3rem;
   gap: 3rem;
   position: relative;
+  color: var(--text-color);
+  background-color: var(--body-bg-color);
 }
 
 .bg-triangle::after {
   content: "";
-  border-top: 70vh solid lightskyblue;
+  border-top: 70vh solid var(--bg-triangle-clr);
   border-right: 150vw solid transparent;
   position: absolute;
   top: 0;
@@ -65,7 +67,7 @@ header {
   background-image: url("../imgs/brwn-bg.png");
   background-size: cover;
   background-position: 50% 20%;
-  box-shadow: 1px 1px 10px 2px gray;
+  box-shadow: 1px 1px 10px 2px var(--box-shadow-clr);
   z-index: 0;
 }
 
@@ -75,8 +77,8 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  box-shadow: 1px 1px 5px gray;
-  background-color: white;
+  box-shadow: 1px 1px 5px var(--box-shadow-clr);
+  background-color: var(--sections-bg-clr);
 }
 
 .about-me > h2, .about-me > p {
@@ -96,7 +98,7 @@ main {
 
 footer {
   flex: 1;
-  background-color: lightskyblue;
+  background-color: var(--bg-footer-clr);
   margin-left: -3rem;
   margin-right: -3rem;
   margin-bottom: -3rem;
@@ -138,7 +140,7 @@ button {
   gap: 0.8rem;
 }
 
-.email svg, .phone svg {
+.email svg, .phone svg, .mode svg {
   height: 24px;
   width: 24px;
 }
@@ -164,6 +166,7 @@ button:active {
   box-shadow: 1px 1px 5px gray;
   width: calc((100vw - 6rem - 2 * 1.5rem) / 3);
   transition: transform 0.3s ease-in-out;
+  background-color: var(--sections-bg-clr);
 }
 
 .card:hover {
@@ -206,7 +209,7 @@ button {
   width: max-content;
   position: absolute;
   top: 90%;
-  background-color: gray;
+  background-color: var(--drop-down-bg-clr);
   border-radius: 5px;
   padding: 0.2rem;
 }
@@ -220,7 +223,7 @@ button {
 
 .drop-down a {
   text-decoration: none;
-  color: white;
+  color: var(--drop-down-text-clr);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -241,6 +244,30 @@ button {
 .right-footer img {
   height: 450px;
   width: 350px;
+}
+
+svg, g, .cls-1 {
+  fill: var(--icon-fill-clr);
+ }
+
+.mode.vis2 {
+  display: block;
+ }
+
+.mode {
+  display: none;
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+ }
+
+header, 
+footer, 
+main {
+  transition: 
+    background-color 0.5s, 
+    color 0.5s,
+    fill 0.5s;
 }
 
 @keyframes slide-down {

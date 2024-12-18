@@ -4,8 +4,47 @@ import {
   getGitButton, 
   getLinkedInButton,
   getAnchors, 
+  getCurrentLightMode,
+  getLightModeButtons,
+  getOtherLightMode,
 } from './cachedElements.js';
+import {
+  champagneTheme,
+  laNoireTheme,
+} from './colorThemes.js';
 import dogs from '../imgs/doggies.jpg';
+
+function changeColors(isDark=false) {
+  let theme = champagneTheme;
+  if (isDark) {
+    theme = laNoireTheme;
+  }
+  const root = document.documentElement;
+  Object.keys(theme).forEach((property) => {
+    root.style.setProperty(property, theme[property]);
+  })
+}
+
+function handleLightModeButtons() {
+  const buttons = getLightModeButtons();
+  buttons.forEach(button => {
+    button.addEventListener('click', changeLightMode);
+  })
+}
+
+function changeLightMode() {
+  const button = getCurrentLightMode();
+  const otherButton = getOtherLightMode();
+  button.classList.remove('vis2');
+  otherButton.classList.remove('other');
+  button.classList.add('other');
+  otherButton.classList.add('vis2');
+  if (button.classList[1] === 'dark') {
+    changeColors();
+  } else {
+    changeColors(true);
+  }
+}
 
 function addFooterImage() {
   const rightFooterContainer = document.querySelector('.right-footer');
@@ -121,6 +160,7 @@ function addProjects() {
 }
 
 function start() {
+  changeColors();
   addProjects();
   handleLinkedInButtons();
   handleAnchors();
@@ -128,6 +168,7 @@ function start() {
   handleInstagramButtons();
   clickingOutOfDropDown();
   addFooterImage();
+  handleLightModeButtons();
 }
 
 export {
