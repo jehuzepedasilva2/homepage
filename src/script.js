@@ -1,9 +1,9 @@
 import './styles.css';
-import { start } from './handleDOM.js';
+import { startEvents } from './handleDOM.js';
 
 
 function main() {
-  start();
+  startEvents();
 }
 
 main();

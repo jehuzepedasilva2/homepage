@@ -159,7 +159,7 @@ function addProjects() {
   }
 }
 
-function start() {
+function startEvents() {
   changeColors();
   addProjects();
   handleLinkedInButtons();
@@ -172,5 +172,5 @@ function start() {
 }
 
 export {
-  start
+  startEvents
 }
