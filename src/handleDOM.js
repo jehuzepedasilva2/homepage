@@ -7,12 +7,22 @@ import {
   getCurrentLightMode,
   getLightModeButtons,
   getOtherLightMode,
+  getResumeButton,
 } from './cachedElements.js';
 import {
   myLight,
   myDark
 } from './colorThemes.js';
 import dogs from '../imgs/doggies.jpg';
+
+function handleResumeButtons() {
+  const buttons = getResumeButton();
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      window.open('https://google.com', '_blank');
+    })
+  })
+}
 
 function changeColors(isDark=false) {
   let theme = myLight;
@@ -165,6 +175,7 @@ function startEvents() {
   handleLinkedInButtons();
   handleAnchors();
   handleGitButtons();
+  handleResumeButtons();
   handleInstagramButtons();
   clickingOutOfDropDown();
   addFooterImage();

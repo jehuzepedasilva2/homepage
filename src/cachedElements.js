@@ -26,6 +26,10 @@ function getOtherLightMode() {
   return document.querySelector('.mode.hidden');
 }
 
+function getResumeButton() {
+  return document.querySelectorAll('.resume-btn');
+}
+
 export {
   getGitButton, 
   getInstagramButton, 
@@ -34,4 +38,5 @@ export {
   getLightModeButtons, 
   getCurrentLightMode,
   getOtherLightMode,
+  getResumeButton,
 }
