@@ -354,3 +354,65 @@ main,
     transform: scaleY(1)
   }
 }
+
+/* for tablet */
+@media (max-width: 1200px) {
+
+  body {
+    padding: 5rem;
+    padding-top: 0.5rem;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .pic-container {
+    position: absolute;
+    height: 500px;
+    width: 433px;
+    top: 0;
+    left: -2.5rem;
+  }
+
+  .outer-border {
+    border-left: 1px solid var(--text-color);
+  }
+
+  .outer-border h2::before {
+    content: "";
+    width: 370px;
+    height: 1px;
+    float: left;
+  }
+
+  .outer-border p::before {
+    content: "";
+    width: 370px;
+    height: 320px;
+    float: left;
+  }
+
+  .about-me {
+    justify-self: center;
+    align-self: center;
+    margin-top: 6rem;
+    padding-left: 1rem;
+  }
+
+  .card {
+    width: calc((100vw - 9rem - 2 * 1.5rem) / 2);
+  }
+
+  footer {
+    margin-left: -5rem;
+    margin-right: -5rem;
+    margin-bottom: -5rem;
+  }
+
+  .designed-by {
+    margin-left: -5rem;
+    margin-bottom: -5rem;
+  }
+  
+}
