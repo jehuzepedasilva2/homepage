@@ -19,7 +19,7 @@ function handleResumeButtons() {
   const buttons = getResumeButton();
   buttons.forEach(button => {
     button.addEventListener('click', () => {
-      window.open('https://google.com', '_blank');
+      window.open('https://github.com/jehuzepedasilva2/current-resume/blob/main/resume_2.0.pdf', '_blank');
     })
   })
 }
