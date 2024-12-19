@@ -115,7 +115,7 @@ header {
   white-space: nowrap;
   letter-spacing: .2rem;
   animation: 
-    type-effect 3s steps(60, end) 1s backwards, 
+    type-effect 3s steps(60, end) 1.3s backwards, 
     flicker .75s step-end infinite;
 }
 
