@@ -61,27 +61,55 @@ header {
   flex: 1;
   height: 500px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   color: white;
   background-image: url("../imgs/brwn-bg.png");
   background-size: cover;
   background-position: 50% 20%;
+  /* background-repeat: no-repeat; */
   box-shadow: 1px 1px 10px 2px var(--box-shadow-clr);
   z-index: 0;
 }
 
+.inner-border > h1 {
+  position: absolute;
+  background: none;
+  bottom: -3.5%;
+  left: 1%;
+}
+
+.inner-border {
+  width: 90%;
+  height: 90%;
+  margin: 1rem;
+  border: 1px solid var(--text-color);
+  position: relative;
+}
+
 .about-me {
   flex: 2;
+  justify-self: flex-start;
   align-self: center;
+  background-color: var(--sections-bg-clr);
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 1px 1px 5px var(--box-shadow-clr);
+}
+
+.outer-border {
+  border: 1px solid var(--text-color);
+  border-left: none;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  box-shadow: 1px 1px 5px var(--box-shadow-clr);
+  padding: 1rem;
   background-color: var(--sections-bg-clr);
 }
 
-.about-me > h2, .about-me > p {
+.outer-border > h2, 
+.outer-border > p {
   margin-bottom: 1rem;
 }
 
@@ -234,7 +262,7 @@ button {
   padding-bottom: 0.7rem;
 }
 
-.drop-down {
+.drop-down a {
   text-decoration: none;
   color: var(--drop-down-text-clr);
   transition: transform 0.3s ease-in-out;
@@ -301,9 +329,9 @@ footer,
 main,
 .bg-triangle {
   transition: 
-    background-color 2s, 
-    color 2s,
-    fill 2s;
+    background-color 1s, 
+    color 1s,
+    fill 1s;
 }
 
 @keyframes slide-down {
