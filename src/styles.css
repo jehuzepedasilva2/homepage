@@ -38,6 +38,15 @@
 
 html {
   overflow-x: hidden;
+  /* stop the scrolling on x axis on safari browser */
+  overscroll-behavior-x: none;
+}
+
+/* stop the scrolling on x axis on mobile ios devices */
+@supports (-webkit-touch-callout: none) {
+  html, body {
+    overflow-x: hidden;
+  }
 }
 
 body {
