@@ -16,6 +16,14 @@
 
 }
 
+@font-face {
+  font-family: 'terminal';
+  src: url('../fonts/terminal/glass_tty_vt220-webfont.woff2') format('woff2'),
+       url('../fonts/terminal/glass_tty_vt220-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -73,11 +81,25 @@ header {
   z-index: 0;
 }
 
-.inner-border > h1 {
+.my-name {
+  display: inline-block;
   position: absolute;
-  background: none;
-  bottom: -3.5%;
+  bottom: -1%;
   left: 1%;
+ 
+}
+
+.my-name > h1 {
+  font-family: 'terminal';
+  font-size: x-large;
+  font-weight: bold;
+  overflow: hidden;
+  border-right: 1rem solid var(--text-color);
+  white-space: nowrap;
+  letter-spacing: .2rem;
+  animation: 
+    type-effect 3s steps(60, end), 
+    flicker .75s step-end infinite;
 }
 
 .inner-border {
@@ -341,6 +363,27 @@ main,
   padding: 0;
   margin-left: -3rem;
   margin-bottom: -3rem;
+}
+
+@keyframes type-effect {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--text-color);
+  }
+  100% {
+    border-color: transparent;
+  }
 }
 
 @keyframes slide-down {
