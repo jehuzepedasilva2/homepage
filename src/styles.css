@@ -28,7 +28,7 @@
   font-weight: lighter;
 }
 
-html, body {
+html {
   overflow-x: hidden;
 }
 
@@ -332,6 +332,15 @@ main,
     background-color 1s, 
     color 1s,
     fill 1s;
+}
+
+.designed-by {
+  width: 100vw;
+  font-size: smaller;
+  background-color: var(--bg-footer-clr);
+  padding: 0;
+  margin-left: -3rem;
+  margin-bottom: -3rem;
 }
 
 @keyframes slide-down {
