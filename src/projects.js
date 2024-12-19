@@ -4,6 +4,7 @@ import aztecKitchen from '../imgs/aztecan-kitchen.png';
 import todo from '../imgs/todo.png';
 import etchASketch from '../imgs/etch-a-skecth.png';
 import blueBg from '../imgs/cool-background.png';
+import algos from '../imgs/algos.png';
 
 const projects = [
   {
@@ -42,11 +43,11 @@ const projects = [
     description: 'A fun and interactive digital Etch-A-Sketch application built with HTML, CSS, and JavaScript. Users can draw on a customizable grid, adjust the grid size, and experiment with various drawing modes'
   }, 
   {
-    projName: "Project name", 
-    screenShotLink: blueBg, 
-    gitLink: '',
-    liveLink: '', 
-    description: 'Short description of the project. Just a couple sentences will do.'
+    projName: "DSA in JavaScript", 
+    screenShotLink: algos, 
+    gitLink: 'https://github.com/jehuzepedasilva2/data-structures-js',
+    liveLink: null, 
+    description: 'Implementation of important algorithms and data structures. Done in JavaScript.'
   }
 ]
 

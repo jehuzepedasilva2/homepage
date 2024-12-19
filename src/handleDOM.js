@@ -159,10 +159,12 @@ function addProjects() {
       window.open(project.gitLink, '_blank');
     })
 
-    const liveButton = document.querySelector(`.card #open-link-${i}`);
-    liveButton.addEventListener('click', () => {
-      window.open(project.liveLink, '_blank');
-    })
+    if (project.liveLink !== null) {
+      const liveButton = document.querySelector(`.card #open-link-${i}`);
+      liveButton.addEventListener('click', () => {
+        window.open(project.liveLink, '_blank');
+      })
+    }
 
     const cardTop = document.querySelector(`.card-top-${i}`);
     cardTop.style.backgroundImage = `url("${project.screenShotLink}")`;
