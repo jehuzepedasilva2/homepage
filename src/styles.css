@@ -91,11 +91,19 @@ header {
 }
 
 .my-name {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
   position: absolute;
   bottom: -0.8%;
   left: 1%;
  
+}
+
+.arrow {
+  font-family: 'terminal';
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .my-name > h1 {
@@ -107,7 +115,7 @@ header {
   white-space: nowrap;
   letter-spacing: .2rem;
   animation: 
-    type-effect 3s steps(60, end), 
+    type-effect 3s steps(60, end) 1s backwards, 
     flicker .75s step-end infinite;
 }
 
