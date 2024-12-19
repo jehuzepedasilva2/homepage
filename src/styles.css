@@ -68,7 +68,6 @@ header {
   background-image: url("../imgs/brwn-bg.png");
   background-size: cover;
   background-position: 50% 20%;
-  /* background-repeat: no-repeat; */
   box-shadow: 1px 1px 10px 2px var(--box-shadow-clr);
   z-index: 0;
 }
@@ -81,9 +80,8 @@ header {
 }
 
 .inner-border {
-  width: 90%;
-  height: 90%;
-  margin: 1rem;
+  width: 91%;
+  height: 91%;
   border: 1px solid var(--text-color);
   position: relative;
 }
