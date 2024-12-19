@@ -11,7 +11,7 @@ function getLinkedInButton() {
 }
 
 function getAnchors() {
-  return document.querySelectorAll('a');
+  return document.querySelectorAll('.drop-down a');
 }
 
 function getLightModeButtons() {
