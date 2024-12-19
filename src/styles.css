@@ -356,7 +356,7 @@ main,
 }
 
 /* for tablet */
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
 
   body {
     padding: 5rem;
@@ -415,4 +415,9 @@ main,
     margin-bottom: -5rem;
   }
   
+}
+
+/* for mobile devices */
+@media (max-width: 850px) {
+
 }
