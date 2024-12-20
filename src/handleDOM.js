@@ -58,7 +58,7 @@ function changeLightMode() {
 
 function addFooterImage() {
   const rightFooterContainer = document.querySelector('.right-footer');
-  rightFooterContainer.innerHTML = `<img src="${dogs}" alt="doggies">`;
+  rightFooterContainer.innerHTML = `<img src="${dogs}" alt="doggies" load="lazy">`;
 }
 
 
