@@ -5,8 +5,16 @@ import todo from '../imgs/todo.png';
 import etchASketch from '../imgs/etch-a-skecth.png';
 import blueBg from '../imgs/cool-background.png';
 import algos from '../imgs/algos.png';
+import resumeBuilder from '../imgs/resume-builder.png';
 
 const projects = [
+  {
+    projName: 'Resume Builder', 
+    screenShotLink: resumeBuilder,
+    gitLink: 'https://github.com/jehuzepedasilva2/cv-app',
+    liveLink: 'https://cv-app-dd8.pages.dev/', 
+    description: 'This interface allows you to customize your resume quickly and easily, with all changes appearing in real-time. Once you’re satisfied with your resume, you can proceed to download it! Created with React'
+  },
   {
     projName: 'Battleship',
     screenShotLink: battleship,
