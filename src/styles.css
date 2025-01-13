@@ -83,7 +83,7 @@ header {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url("../imgs/brwn-bg.png");
+  background-image: url("../imgs/better.png");
   background-size: cover;
   background-position: 50% 20%;
   box-shadow: 1px 1px 10px 2px var(--box-shadow-clr);
