@@ -84,8 +84,8 @@ header {
   justify-content: center;
   color: white;
   background-image: url("../imgs/better.png");
-  background-size: cover;
-  background-position: 50% 20%;
+  background-size: 325%;
+  background-position: 48% 31%;
   box-shadow: 1px 1px 10px 2px var(--box-shadow-clr);
   z-index: 0;
 }
@@ -336,8 +336,8 @@ button {
 }
 
 .right-footer img {
-  height: 450px;
-  width: 350px;
+  height: 500px;
+  width: 500px;
 }
 
 svg, g, .cls-1 {

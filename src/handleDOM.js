@@ -13,7 +13,7 @@ import {
   myLight,
   myDark
 } from './colorThemes.js';
-import dogs from '../imgs/doggies.jpg';
+import dogs from '../imgs/dogs.png';
 
 function handleResumeButtons() {
   const buttons = getResumeButton();
