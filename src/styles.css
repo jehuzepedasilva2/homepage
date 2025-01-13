@@ -84,8 +84,8 @@ header {
   justify-content: center;
   color: white;
   background-image: url("../imgs/better.png");
-  background-size: 325%;
-  background-position: 48% 31%;
+  background-size: 105%;
+  background-position: 10% 0%;
   box-shadow: 1px 1px 10px 2px var(--box-shadow-clr);
   z-index: 0;
 }
